@@ -33,9 +33,9 @@ CREATE TABLE loan_approval_analysis (
     income_level VARCHAR(50),
     loan_amount_ratings VARCHAR(50),
     loan_term_label VARCHAR(50),
-    dependent_levels VARCHAR(50)
+    dependent_levels VARCHAR(50);
 
-# 📊 SQL Query Summary – Loan Approval Analysis
+## 📊 SQL Query Summary – Loan Approval Analysis
 
 This project explores loan approval data using SQL queries. Below is a summary of the analyses performed:
 
