@@ -76,5 +76,5 @@ This project explores loan approval data using SQL queries. Below is a summary o
    - Shows average CIBIL score for approved vs rejected loans.  
    - Provides insight into whether higher CIBIL scores improve approval chances.  
 
-);
+
 
