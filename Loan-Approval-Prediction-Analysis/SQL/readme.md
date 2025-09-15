@@ -34,5 +34,48 @@ CREATE TABLE loan_approval_analysis (
     loan_amount_ratings VARCHAR(50),
     loan_term_label VARCHAR(50),
     dependent_levels VARCHAR(50)
+
+## 📊 SQL Query Summary – Loan Approval Analysis
+
+This project explores loan approval data using SQL queries. Below is a summary of the analyses performed:
+
+1. **Average Loan Amount by Education & Self-Employment**  
+   - Groups applicants by education and self-employment.  
+   - Calculates and ranks average loan amounts.  
+
+2. **Top 5 Highest Loan Amount Applicants**  
+   - Retrieves applicants with the largest loan amounts.  
+   - Includes income and CIBIL score for context.  
+
+3. **Loan Approval Rate by Income Level**  
+   - Calculates percentage of approved loans per income level.  
+   - Highlights approval likelihood by income category.  
+
+4. **Ranking Loan Amounts within CIBIL Rating**  
+   - Uses a window function to rank applicants by loan amount.  
+   - Rankings are done within each CIBIL rating category.  
+
+5. **Applicants Above Group Average Loan Amount**  
+   - Compares individual loan amounts against their income-level average.  
+   - Returns those exceeding the group’s average.  
+
+6. **Approved vs Rejected Loans (Loan & Income Comparison)**  
+   - Compares average loan amount and income between approvals and rejections.  
+
+7. **Asset-to-Loan Ratio (Top 10 Applicants)**  
+   - Creates a CTE to calculate total assets (residential + commercial + luxury + bank).  
+   - Finds applicants with the highest asset-to-loan ratio.  
+
+8. **Loan Term Distribution by CIBIL Rating**  
+   - Uses `GROUPING SETS` to show loan term categories (Short/Intermediate/Long).  
+   - Provides breakdown across CIBIL rating categories.  
+
+9. **Top Earners by Education**  
+   - Identifies applicants with the maximum income per education level.  
+
+10. **CIBIL Score vs Loan Approval**  
+   - Shows average CIBIL score for approved vs rejected loans.  
+   - Provides insight into whether higher CIBIL scores improve approval chances.  
+
 );
 
