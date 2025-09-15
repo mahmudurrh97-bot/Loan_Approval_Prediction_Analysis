@@ -29,5 +29,5 @@ This project presents an interactive **Excel dashboard** for analyzing loan appr
 
 ## Dashboard Preview  
 
-![Loan Approval Analysis](loan_approval.png)  
+![Loan-Approval-Prediction-Analysis](loan_approval.png)  
 
